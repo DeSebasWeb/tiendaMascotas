@@ -26,17 +26,15 @@ public class ConexionBD {
     private Connection conectar(){
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            this.conex = DriverManager.getConnection(this.cadena, this.usuario, this.contra);
-            System.out.println("Ya tiene conexion con la base de datos");
-        } catch (Exception e) {
-            System.out.println("No hay conexion a la base de datos por el error: "+e.getMessage());
-        } finally {
-        }
+            this.conex = DriverManager.getConnection(this.cadena,this.usuario,this.contra);
+            System.out.println("Hay conexion a la base de datos");
+        } catch(Exception e) {
+            System.out.println("No hay conexion con la base de datos"+e.getMessage());
+        }     
         return this.conex;
     }
     
     public Connection getConectar(){
-        return this.conectar();
+        return this.conectar(); 
     }
-    
 }

@@ -67,9 +67,8 @@ public class ComidaGato extends Productos{
     }
 
     public void setCantidad(int cantidad) {
-        this.cantidad = cantidad;
+        this.cantidad = (short) cantidad;
     }
-    
     
     
     
