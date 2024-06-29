@@ -24,15 +24,6 @@ public class Main {
         int cantidad;
         String nombre;
         
-        /*
-        
-        
-        
-        
-        
-        
-        */
-        
         JOptionPane.showMessageDialog(null, "Bienvenido al sistema de inventario de la veterinaria");
         while(true){
             try {
@@ -45,7 +36,7 @@ public class Main {
                         precio= Double.parseDouble(JOptionPane.showInputDialog("Cual es el precio de la comida?"));
                         tamaño= JOptionPane.showInputDialog("Para que tamaño de perro es la comida? cachorro o adulto");
                         comidaEspecial= JOptionPane.showInputDialog("La comida es para un fin en especial como cuidado de riñones, cuidado de piel etc...\n introduzca 'si' para confrmar \t introduzca 'no para negar'");
-                        descripcion = JOptionPane.showInputDialog("De la descripcion de la comida, para que raza especificamente, cuidados etc...");
+                        descripcion = JOptionPane.showInputDialog("Introduzca la descripcion de la comida, para que raza especificamente, cuidados etc...");
                         cantidad = Integer.parseInt(JOptionPane.showInputDialog("Cuantos paquetes de comida va a introducir?")); 
                         
                         ComidaPerro comida= new ComidaPerro(codigoBarras, marca, precio, tamaño, comidaEspecial, descripcion, cantidad);
@@ -58,7 +49,7 @@ public class Main {
                         precio= Double.parseDouble(JOptionPane.showInputDialog("Cual es el precio de la comida?"));
                         tamaño= JOptionPane.showInputDialog("Para que tamaño de gato es la comida? cachorro o adulto");
                         comidaEspecial= JOptionPane.showInputDialog("La comida es para un fin en especial como cuidado de riñones, cuidado de piel etc...\n introduzca 'si' para confrmar \t introduzca 'no para negar'");
-                        descripcion = JOptionPane.showInputDialog("De la descripcion de la comida, para que raza especificamente, cuidados etc...");
+                        descripcion = JOptionPane.showInputDialog("Introduzca la descripcion de la comida, para que raza especificamente, cuidados etc...");
                         cantidad = Integer.parseInt(JOptionPane.showInputDialog("Cuantos paquetes de comida va a introducir?")); 
                         
                         ComidaGato comida= new ComidaGato(codigoBarras, marca, precio, tamaño, comidaEspecial, descripcion, cantidad);
@@ -97,8 +88,6 @@ public class Main {
             } catch (Exception e) {
                 JOptionPane.showMessageDialog(null, "La opcion que quiere no esta disponible");
             }
-            
-            
         }
     }
     
