@@ -27,9 +27,7 @@ public class Main {
         /*
         
         
-        JuguetesGato juguete = new JuguetesGato("754433", "Rascador", 70.540, "Rascador especializado para gatos", 3);
-        JuguetesGatoDao dao = new JuguetesGatoDao();
-        dao.registrarJuguete(juguete);
+        
         
         
         
@@ -80,7 +78,17 @@ public class Main {
                         JuguetesPerro juguete = new JuguetesPerro(codigoBarras, nombre, precio, descripcion, cantidad);
                         JuguetesPerroDao dao = new JuguetesPerroDao();
                         dao.registrarJuguete(juguete);
-                    }else if(){
+                    }else if(seleccion2==2){
+                        codigoBarras = JOptionPane.showInputDialog("Cual es el codigo de barras del juguete? (Recuerde que debe der maximo 6 digitos)");
+                        nombre = JOptionPane.showInputDialog("Cual es el nombre del juguete");
+                        precio= Double.parseDouble(JOptionPane.showInputDialog("Cual es el precio del juguete?"));
+                        descripcion = JOptionPane.showInputDialog("Descripcion del juguete");
+                        cantidad = Integer.parseInt(JOptionPane.showInputDialog("Cuantos juguetes va a introducir?")); 
+                        
+                        
+                        JuguetesGato juguete = new JuguetesGato(codigoBarras, nombre, precio, descripcion, cantidad);
+                        JuguetesGatoDao dao = new JuguetesGatoDao();
+                        dao.registrarJuguete(juguete);
                     }
                 }else if(seleccion==3){
                     JOptionPane.showMessageDialog(null, "Usted ha salido del inventario");
