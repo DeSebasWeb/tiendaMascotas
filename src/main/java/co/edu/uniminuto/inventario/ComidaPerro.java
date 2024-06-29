@@ -4,7 +4,7 @@ public class ComidaPerro extends Productos{
     private String tamaño;
     private String comidaEspecial;
 
-    public ComidaPerro(String codigo, String marca, double precio, String tamaño, String comidaEspecial, String descripcion, short cantidad) {
+    public ComidaPerro(String codigo, String marca, double precio, String tamaño, String comidaEspecial, String descripcion, int cantidad) {
         this.codigo = codigo;
         this.marca = marca;
         this.precio = precio;
@@ -66,7 +66,7 @@ public class ComidaPerro extends Productos{
         return cantidad;
     }
 
-    public void setCantidad(short cantidad) {
+    public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
     }
     
