@@ -2,7 +2,7 @@ package co.edu.uniminuto.inventario;
 public class JuguetesGato extends Productos{
     private String nombre;
 
-    public JuguetesGato(String codigo,String nombre, double precio, String descripcion, short cantidad) {
+    public JuguetesGato(String codigo,String nombre, double precio, String descripcion, int cantidad) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.precio = precio;
@@ -46,7 +46,7 @@ public class JuguetesGato extends Productos{
         return cantidad;
     }
 
-    public void setCantidad(short cantidad) {
+    public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
     }
     
